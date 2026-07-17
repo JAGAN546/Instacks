@@ -1,0 +1,18 @@
+*.class
+*.log
+
+# IntelliJ
+.idea/
+
+# Eclipse/STS
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# Build folders
+bin/
+target/
+out/
