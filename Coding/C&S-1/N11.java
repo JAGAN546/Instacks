@@ -22,5 +22,6 @@ class N11
             if(c==0)
                 System.out.println("NO NUMBERS");
         }
+        sc.close();
     }
 }
