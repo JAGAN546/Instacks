@@ -1,0 +1,42 @@
+import java.util.*;
+class Q11
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,j,n;
+        n=sc.nextInt();
+        if(n<=0)
+            System.out.println("Invalid Input");
+        else
+        {
+            for(i=1;i<=n;i++)
+            {
+                for(j=1;j<=n;j++)
+                {
+                    if(j<=n-i)
+                        System.out.print(" ");
+                    else if(j>n-i+1 && j<n)
+                        System.out.print("  ");
+                    else
+                        System.out.print("* ");
+                }
+                System.out.println();
+            }
+            for(i=1;i<=n-1;i++)
+            {
+                System.out.print(" ");
+                for(j=1;j<=n-1;j++)
+                {
+                    if(j<=i-1)
+                        System.out.print(" ");
+                    else if(j>i && j<n-1)
+                        System.out.print("  ");
+                    else
+                        System.out.print("* ");
+                }
+                System.out.println();
+            }
+        }
+    }
+}
